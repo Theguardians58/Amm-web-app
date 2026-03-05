@@ -1,24 +1,28 @@
 {
-  "name": "ammi's-kachhi",
+  "name": "ammis-kachhi",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "tsc --noEmit",
-    "preview": "vite preview"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@google/genai": "^1.40.0",
+    "@neondatabase/serverless": "^0.10.4",
     "lucide-react": "^0.563.0",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "next": "^15.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "swr": "^2.3.3"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.4",
     "@types/node": "^22.14.0",
-    "@vitejs/plugin-react": "^5.0.0",
-    "typescript": "~5.8.2",
-    "vite": "^6.2.0"
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tailwindcss": "^4.1.4",
+    "typescript": "~5.8.2"
   }
 }
